@@ -16,4 +16,4 @@ post:
 
     GEM_VERSION=
     if grep -qe "release 6" /etc/centos-release; then GEM_VERSION=gem; else GEM_VERSION=gem2.0;fi
-    $GEM_VERSION install sequel:w
+    $GEM_VERSION install sequel
