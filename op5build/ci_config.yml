@@ -15,4 +15,5 @@ post:
     sudo -u monitor mon test rsync
 
     GEM_VERSION=$(if grep -qe "release 6" /etc/centos-release; then echo "gem2.0"; else echo "gem"; fi
+    echo $GEM_VERSION
     $GEM_VERSION install sequel
