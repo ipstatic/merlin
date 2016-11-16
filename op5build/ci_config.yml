@@ -14,6 +14,6 @@ post:
     chmod 440 /etc/sudoers.d/asmonitor
     sudo -u monitor mon test rsync
 
-    expot GEM_VERSION=$(if grep -qe "release 6" /etc/centos-release; then echo "gem2.0"; else echo "gem"; fi)
+    export GEM_VERSION=$(if grep -qe "release 6" /etc/centos-release; then echo "gem2.0"; else echo "gem"; fi)
     echo $GEM_VERSION
     $GEM_VERSION install sequel
